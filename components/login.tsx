@@ -15,11 +15,13 @@ import { Label } from "@/components/ui/label"
 
 const Login = () => {
   return (
-    <div className='flex items-center justify-center'>
-        <Card className='w-[500px]'>
+    <div className='flex items-center justify-center h-screen'>
+        <Card className='w-[800px]'>
+        <div className='w-1/2'>
             <CardHeader>
+            <img className='mx-32' src="/logo.png" width={100} height={50} />
                 <CardTitle className='text-center'>
-                    Log in
+                    HealthSync
                 </CardTitle>
             </CardHeader>
 
@@ -36,11 +38,15 @@ const Login = () => {
                         
                         </div>
                     </div>
-                </form>
+                </form>       
             </CardContent>
             <CardFooter className="flex flex-1 justify-center">
-                <Button className='bg-green-800 px-10'>Login</Button>
+                <Button className='bg-green-800 px-8'>Login</Button>
             </CardFooter>
+            <div className='text-center text-cyan-500 ' >
+                <a href='/forgot-password'>Forgot Password?</a>
+            </div>
+        </div>
         </Card>
 
     </div>
